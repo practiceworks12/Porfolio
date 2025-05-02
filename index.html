@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === CONFIG: Update Title === -->
+    <title>Shoaib // Creative Frontend Developer</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- === CONFIG: Favicon Path === -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark"> <!-- Default Theme: dark / light -->
+
+    <!-- Header -->
+    <header id="main-header" class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo" aria-label="Go to homepage">
+                 <!-- === CONFIG: Your Initials === -->
+                <span class="logo-text">SB</span>
+            </a>
+            <!-- Desktop Navigation -->
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#snippets" class="nav-link">Snippets</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile Navigation Panel (Toggled by JS) -->
+            <nav class="mobile-nav-panel" id="mobileNavPanel">
+                 <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#snippets" class="nav-link">Snippets</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Header Actions (Theme Toggle, Hamburger) -->
+            <div class="header-actions">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Switch theme">
+                    <i class="fas fa-sun theme-icon-sun"></i>
+                    <i class="fas fa-moon theme-icon-moon"></i>
+                </button>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNavPanel">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section id="home" class="hero section full-screen">
+            <div class="container hero-grid">
+                <div class="hero-text" data-animation="fade-slide-up">
+                    <h1 class="main-headline">
+                        <!-- === FIXED: Applied name-gradient-animated class === -->
+                        <span class="main-headline2">I'm <span class="name-gradient-animated">Shoaib</span></span>
+                     
+                        Creative <span class="gradient-text hero-gradient-animated">Frontend</span><br>
+                       
+                        <span id="typing-effect">Developer</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Transforming ideas into engaging, pixel-perfect web experiences with a focus on clean code and intuitive design. Let's build something exceptional.
+                    </p>
+                    <div class="hero-buttons" data-animation="fade-in" data-delay="0.3s">
+                        <a href="#projects" class="btn btn-primary btn-glow"><i class="fas fa-lightbulb"></i> Explore My Work</a>
+                        <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+                    </div>
+                </div>
+                 <div class="hero-image-container" data-animation="fade-in" data-delay="0.1s">
+                     <!-- === CONFIG: Hero Image Path === -->
+                     <img src="beautiful-office-space-cartoon-style.jpg" alt="Shoaib - Creative Frontend Developer" class="hero-image"> 
+                 </div>
+            </div>
+             <a href="#about" class="scroll-indicator" aria-label="Scroll to next section">
+                <i class="fas fa-chevron-down"></i>
+             </a>
+        </section>
+
+        <!-- About Me Section (Refined) -->
+        <section id="about" class="about section">
+            <div class="container">
+                 <h2 class="section-title" data-animation="fade-in">About Me</h2>
+                 <div class="about-content-grid">
+                     <div class="about-image" data-animation="slide-in-left">
+                         
+                         <img src="about.jpg" alt="Professional Headshot of Shoaib"> 
+                     </div>
+                     <div class="about-text" data-animation="slide-in-right">
+                         <h3 class="section-subtitle-small">Passionate Frontend Creator</h3>
+                          
+                          <p>
+                           
+                           Hello! I'm <span class="bio-tag">Shoaib</span>, a passionate <span class="bio-tag">Creative Developer</span> and <span class="bio-tag">Designer</span> based in <span class="bio-tag">[Pakistan]</span>. I thrive on turning complex problems into beautiful, intuitive, and functional digital solutions.
+                       </p>
+                       <p>
+                           With a strong foundation in front-end technologies like <span class="bio-tag">React</span> and <span class="bio-tag">JavaScript</span>, coupled with a keen eye for design and user experience, I focus on creating impactful websites and applications. I love collaborating and bringing ideas to life!
+                       </p>
+                       <p>
+                            My skills span from initial <span class="bio-tag">UI/UX Design</span> concepts to full <span class="bio-tag">Front-End Development</span> and deployment. Always learning, always coding, always creating.
+                       </p>
+
+                         <!-- Client Highlights/Tags Section -->
+                         <div class="client-highlights" data-animation="fade-in" data-delay="0.2s">
+                             <h4>Client Highlights & Experience:</h4>
+                             <div class="client-tags">
+                                 
+                                 <span class="client-tag"><i class="fa-solid fa-code"></i> Clean Code</span>
+                                 <span class="client-tag"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                                 
+                                 <span class="client-tag"><i class="fas fa-rocket"></i> Performance</span>
+                                 <span class="client-tag"><i class="fas fa-lightbulb"></i> Creative Solutions</span>
+                                 <span class="client-tag"><i class="fas fa-shopping-cart"></i> E-commerce Platforms</span>
+                             </div>
+                         </div>
+
+                         <!-- Buttons  -->
+                         <div class="about-buttons" data-animation="fade-in" data-delay="0.3s">
+                              <!--add CV HEre-->
+                             <a href="assets/your-cv.pdf" class="btn btn-secondary" target="_blank"><i class="fas fa-download"></i> View Resume</a>
+                             <a href="#contact" class="btn btn-primary"><i class="fas fa-comments"></i> Let's Talk</a>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+      <!--  START: STATS BAR SECTION  -->
+        <section id="stats" class="stats section section-compact">
+            <div class="container">
+               
+                <div class="stats-grid">
+                    <!-- Stat Item 1 -->
+                   
+                    <div class="stat-item" data-animation="fade-in" data-delay="0s">
+                        <i class="fas fa-check-circle stat-icon"></i>
+                        <div class="stat-text">
+                            <span class="stat-number" data-target="15">0</span>
+                            <p class="stat-label">Completed Projects</p>
+                        </div>
+                    </div>
+                    <!-- Stat Item 2 -->
+                    <div class="stat-item" data-animation="fade-in" data-delay="0.1s">
+                        <i class="fas fa-smile stat-icon"></i>
+                        <div class="stat-text">
+                            <span class="stat-number" data-target="13">0</span>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                    </div>
+                    <!-- Stat Item 3 -->
+                    <div class="stat-item" data-animation="fade-in" data-delay="0.2s">
+                         <i class="fas fa-hourglass-half stat-icon"></i>
+                         <div class="stat-text">
+                            <span class="stat-number" data-target="3">0</span>
+                            <p class="stat-label">Ongoing Projects</p>
+                         </div>
+                    </div>
+                    <!-- Stat Item 4 -->
+                    <div class="stat-item" data-animation="fade-in" data-delay="0.3s">
+                        <i class="fas fa-award stat-icon"></i>
+                        <div class="stat-text">
+                             
+                            <span class="stat-number" data-target="2">0</span>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                    </div>
+
+                    <!-- Stat Item 5 -->
+                    <div class="stat-item " data-animation="fade-in" data-delay="0.3s">
+                        <i class="fa-solid fa-percent stat-icon"></i>
+                        <div class="stat-text">
+                             
+                            <span class="stat-number" data-target="99">0</span>
+                            <p class="stat-label">Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: STATS BAR SECTION -->
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title" data-animation="fade-in">My Tech & Design Stack</h2>
+                <div class="skills-grid-container">
+                    <!-- Skill Card: HTML5 -->
+                    <div class="skill-card" data-animation="pop-in" data-delay="0s">
+                         <div class="skill-icon-wrap icon-html"><i class="fab fa-html5"></i></div>
+                        <h3 class="skill-name">HTML5</h3>
+                        <p class="skill-level"><span class="expertise-highlight">Advanced</span></p>
+                        <div class="skill-progress-bar"><span style="--progress-width: 95%;"></span></div>
+                    </div>
+                    <!-- Skill Card: CSS3 -->
+                    <div class="skill-card" data-animation="pop-in" data-delay="0.1s">
+                         <div class="skill-icon-wrap icon-css"><i class="fab fa-css3-alt"></i></div>
+                        <h3 class="skill-name">CSS3</h3>
+                        <p class="skill-level"><span class="expertise-highlight">Advanced</span></p>
+                         <div class="skill-progress-bar"><span style="--progress-width: 90%;"></span></div>
+                    </div>
+                     <!-- Skill Card: JavaScript -->
+                     <div class="skill-card" data-animation="pop-in" data-delay="0.2s">
+                         <div class="skill-icon-wrap icon-js"><i class="fab fa-js-square"></i></div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <p class="skill-level"><span class="expertise-highlight">Proficient</span></p>
+                         <div class="skill-progress-bar"><span style="--progress-width: 85%;"></span></div>
+                    </div>
+                     <!-- Skill Card: React -->
+                     <div class="skill-card" data-animation="pop-in" data-delay="0.3s">
+                         <div class="skill-icon-wrap icon-react"><i class="fab fa-react"></i></div>
+                        <h3 class="skill-name">React</h3>
+                        <p class="skill-level"><span class="expertise-highlight">Intermediate</span></p>
+                         <div class="skill-progress-bar"><span style="--progress-width: 80%;"></span></div>
+                    </div>
+                    <!-- Skill Card: Node.js -->
+                    <div class="skill-card" data-animation="pop-in" data-delay="0.4s">
+                         <div class="skill-icon-wrap icon-node"><i class="fab fa-node-js"></i></div>
+                        <h3 class="skill-name">Node.js</h3>
+                        <p class="skill-level"><span class="expertise-highlight">Basic</span></p>
+                         <div class="skill-progress-bar"><span style="--progress-width: 70%;"></span></div>
+                    </div>
+                    <!-- Skill Card: Git -->
+                    <div class="skill-card" data-animation="pop-in" data-delay="0.5s">
+                         <div class="skill-icon-wrap icon-git"><i class="fab fa-git-alt"></i></div>
+                        <h3 class="skill-name">Git</h3>
+                        <p class="skill-level"><span class="expertise-highlight">Proficient</span></p>
+                         <div class="skill-progress-bar"><span style="--progress-width: 90%;"></span></div>
+                    </div>
+                    <!-- Skill Card: Sass -->
+                     <div class="skill-card" data-animation="pop-in" data-delay="0.6s">
+                         <div class="skill-icon-wrap icon-sass"><i class="fab fa-sass"></i></div>
+                        <h3 class="skill-name">Sass</h3>
+                        <p class="skill-level"><span class="expertise-highlight">Intermediate</span></p>
+                         <div class="skill-progress-bar"><span style="--progress-width: 85%;"></span></div>
+                    </div>
+                    <!-- Skill Card: Figma -->
+                    <div class="skill-card" data-animation="pop-in" data-delay="0.7s">
+                         <div class="skill-icon-wrap icon-figma"><i class="fab fa-figma"></i></div>
+                        <h3 class="skill-name">Figma</h3>
+                        <p class="skill-level"><span class="expertise-highlight">Advanced</span></p>
+                         <div class="skill-progress-bar"><span style="--progress-width: 88%;"></span></div>
+                    </div>
+                    <!-- Skill Card: Adobe XD -->
+                    <div class="skill-card" data-animation="pop-in" data-delay="0.8s">
+                        <div class="skill-icon-wrap icon-xd"><i class="fas fa-bezier-curve"></i></div>
+                        <h3 class="skill-name">Adobe XD</h3>
+                        <p class="skill-level"><span class="expertise-highlight">Intermediate</span></p>
+                        <div class="skill-progress-bar"><span style="--progress-width: 75%;"></span></div>
+                    </div>
+                    <!-- Skill Card: UI/UX Principles -->
+                    <div class="skill-card" data-animation="pop-in" data-delay="0.9s">
+                        <div class="skill-icon-wrap icon-uiux"><i class="fas fa-lightbulb"></i></div>
+                        <h3 class="skill-name">UI/UX Principles</h3>
+                        <p class="skill-level"><span class="expertise-highlight">Strong</span></p>
+                        <div class="skill-progress-bar"><span style="--progress-width: 90%;"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== END: Skills Section ===== -->
+
+        <!-- ===== START: MY PROCESS SECTION ===== -->
+        <section id="process" class="process section">
+            <div class="container">
+                <h2 class="section-title" data-animation="fade-in">My Workflow</h2>
+                 <p class="section-intro" data-animation="fade-in" data-delay="0.1s">A streamlined approach to bring your digital ideas to life effectively.</p>
+                <div class="process-grid">
+                    <!-- Process Step 1 -->
+                    <div class="process-step" data-animation="fade-slide-up" data-delay="0s">
+                        <div class="process-icon-wrap"><i class="fas fa-lightbulb"></i></div>
+                        <span class="process-step-number">01</span>
+                        <h3 class="process-step-title">Discovery & Idea</h3>
+                        <p class="process-step-desc">Understanding your vision, goals, and requirements through detailed discussion.</p>
+                    </div>
+                    <!-- Process Step 2 -->
+                     <div class="process-step" data-animation="fade-slide-up" data-delay="0.1s">
+                        <div class="process-icon-wrap"><i class="fas fa-palette"></i></div>
+                        <span class="process-step-number">02</span>
+                        <h3 class="process-step-title">Design & Prototype</h3>
+                        <p class="process-step-desc">Creating wireframes and mockups for a user-friendly and visually appealing interface.</p>
+                    </div>
+                     <!-- Process Step 3 -->
+                     <div class="process-step" data-animation="fade-slide-up" data-delay="0.2s">
+                        <div class="process-icon-wrap"><i class="fas fa-code"></i></div>
+                        <span class="process-step-number">03</span>
+                        <h3 class="process-step-title">Development</h3>
+                        <p class="process-step-desc">Building the website or application with clean, efficient, and responsive code.</p>
+                    </div>
+                     <!-- Process Step 4 -->
+                     <div class="process-step" data-animation="fade-slide-up" data-delay="0.3s">
+                        <div class="process-icon-wrap"><i class="fas fa-rocket"></i></div>
+                        <span class="process-step-number">04</span>
+                        <h3 class="process-step-title">Testing & Delivery</h3>
+                        <p class="process-step-desc">Rigorous testing across devices, followed by deployment and final handover.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== END: MY PROCESS SECTION ===== -->
+
+        <!-- Projects Section  -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title" data-animation="fade-in">Featured Projects</h2>
+                 <p class="section-intro" data-animation="fade-in" data-delay="0.1s">A selection of projects showcasing my skills and passion.</p>
+                <div class="project-grid">
+                   
+                    <!-- Project Card 1  -->
+                    <article class="project-card" data-animation="fade-in">
+                        <img src="Project-pic5.jpg" alt="E-commerce Platform Screenshot" class="project-card-image">
+                        <div class="project-info-overlay">
+                             <div class="project-tech-icons">
+                                <i class="fab fa-html5" title="HTML5"></i>
+                                 <i class="fab fa-css3-alt" title="CSS3"></i>
+                                 <i class="fab fa-js-square" title="JavaScript"></i>
+                                <i class="fab fa-react" title="React"></i>
+                               
+                                
+                            </div>
+                            <h3 class="project-card-title">T-Shirts Store | E-commerce </h3>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link btn btn-sm" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                <a href="#" target="_blank" class="project-link btn btn-sm github-link" aria-label="View Code"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project Card 2  -->
+                    <article class="project-card" data-animation="fade-in" data-delay="0.1s">
+                         <img src="Projectpic7.jpg" alt="Data Dashboard Screenshot" class="project-card-image">
+                         <div class="project-info-overlay">
+                            <div class="project-tech-icons">
+                                <i class="fab fa-html5" title="HTML5"></i>
+                                 <i class="fab fa-css3-alt" title="CSS3"></i>
+                                <i class="fab fa-js-square" title="JavaScript"></i>
+                                
+                                
+                            </div>
+                            <h3 class="project-card-title">MUSiCology </h3>
+                            <div class="project-links">
+                                <a href="https://practiceworks12.github.io/MUSiCology/" target="_blank" class="project-link btn btn-sm" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                <a href="https://practiceworks12.github.io/MUSiCology/" target="_blank" class="project-link btn btn-sm github-link" aria-label="View Code"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+                     <!-- Project Card 3 (Hidden ) -->
+                     <article class="project-card project-hidden" data-animation="fade-in" data-delay="0s"> 
+                        <img src="Project-pic1.jpg" alt="Previous Portfolio Screenshot" class="project-card-image">
+                        <div class="project-info-overlay">
+                            <div class="project-tech-icons">
+                                <i class="fab fa-html5" title="HTML5"></i>
+                                <i class="fab fa-css3-alt" title="CSS3"></i>
+                                <i class="fab fa-js-square" title="JavaScript"></i>
+                                <i class="fab fa-react" title="React"></i>
+                           </div>
+                           <h3 class="project-card-title"> Electronics E-commerce Store</h3>
+                           <div class="project-links">
+                               <a href="#" target="_blank" class="project-link btn btn-sm" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                               <a href="#" target="_blank" class="project-link btn btn-sm github-link" aria-label="View Code"><i class="fab fa-github"></i> Code</a>
+                           </div>
+                       </div>
+                   </article>
+
+
+                    <!-- Project Card 4 (Hidden ) -->
+                    <article class="project-card project-hidden" data-animation="fade-in" data-delay="0s"> 
+                         <img src="Project-pic3.jpg" alt="Previous Portfolio Screenshot" class="project-card-image">
+                         <div class="project-info-overlay">
+                             <div class="project-tech-icons">
+                                 <i class="fab fa-html5" title="HTML5"></i>
+                                 <i class="fab fa-css3-alt" title="CSS3"></i>
+                                 <i class="fab fa-js-square" title="JavaScript"></i>
+                            </div>
+                            <h3 class="project-card-title"> Coder Portfolio Website V1</h3>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link btn btn-sm" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                <a href="#" target="_blank" class="project-link btn btn-sm github-link" aria-label="View Code"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project Card 5 (Hidden ) -->
+                    <article class="project-card project-hidden" data-animation="fade-in" data-delay="0.1s"> 
+                        <img src="Project-pic4.jpg" alt="Task App Screenshot" class="project-card-image">
+                        <div class="project-info-overlay">
+                            <div class="project-tech-icons">
+                               
+                                <i class="fab fa-html5" title="HTML5"></i>
+                                <i class="fab fa-css3-alt" title="CSS3"></i>
+                                <i class="fab fa-js-square" title="JavaScript"></i>
+                              
+                            </div>
+                            <h3 class="project-card-title">Portfolio Website V2</h3>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link btn btn-sm" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                <a href="#" target="_blank" class="project-link btn btn-sm github-link" aria-label="View Code"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+                     <!-- Add more  project cards here if I'm neede , give  class="project-card project-hidden" and add more projects-->
+                </div>
+                <!-- Show More Button  -->
+                 <div class="show-more-container" data-animation="fade-in">
+                    
+                    <button id="show-more-projects" class="btn btn btn-primary" style="display: none;">Show More Projects</button>
+                 </div>
+            </div>
+        </section>
+        <!-- ===== END: Projects Section ===== -->
+
+        <!-- Code Snippets Section -->
+        <section id="snippets" class="snippets section">
+             <div class="container">
+                <h2 class="section-title" data-animation="fade-in">Code Snippets</h2>
+                <p class="section-intro" data-animation="fade-in" data-delay="0.1s">Useful code examples and techniques I find helpful.</p>
+                <div class="snippets-grid">
+                    <!-- Snippet Card 1: CSS Button Hover -->
+                    <div class="snippet-card" data-lang="css" data-animation="fade-slide-up">
+                        <div class="snippet-header">
+                            <h3 class="snippet-title">CSS Button Hover</h3>
+                            <div class="snippet-meta">
+                                <!-- <i class="fab fa-css3-alt snippet-language-icon icon-css" title="CSS"></i> -->
+                                <i class="fab fa-css3-alt   icon-css" title="CSS3"></i>
+                                <span class="snippet-tags">UI Effect</span>
+                            </div>
+                        </div>
+                        <div class="snippet-output">
+                            <p>An enhanced button hover effect:</p>
+                            <button class="btn btn-primary snippet-preview-button">Hover Over Me</button>
+                        </div>
+                        <div class="snippet-controls">
+                            <button class="macos-button snippet-toggle-code"><i class="fas fa-code"></i> Show Code</button>
+                            <button class="macos-button snippet-toggle-details"><i class="fas fa-info-circle"></i> Details</button>
+                        </div>
+                        <div class="snippet-code-wrapper">
+                            <button class="snippet-copy-code" aria-label="Copy Code"><i class="fas fa-copy"></i> Copy</button>
+                            <textarea class="copy-textarea" aria-hidden="true">/* Base button styles */ .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 28px; border: 1px solid transparent; border-radius: 8px; cursor: pointer; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.6px; transition: all 0.35s ease-out; position: relative; overflow: hidden; box-shadow: 0 3px 6px rgba(0,0,0,0.06); } /* Primary button style */ .btn-primary { background: linear-gradient(135deg, #3b82f6, #ec4899); color: white; border: none; } /* Hover effect */ .btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 6px 12px rgba(0,0,0,0.1); filter: brightness(1.1); }</textarea>
+                            <pre><code class="language-css">/* Base button styles */ .btn { display: inline-flex; align-items: center; /* ... */ }
+/* Primary button style */ .btn-primary { background: linear-gradient(135deg, #3b82f6, #ec4899); /* ... */ }
+/* Hover effect */ .btn:hover { transform: translateY(-3px) scale(1.02); /* ... */ }</code></pre>
+                        </div>
+                        <div class="snippet-details-wrapper">
+                            <p>Enhanced CSS hover animation using transform and box-shadow.</p>
+                        </div>
+                    </div>
+                    <!-- Snippet Card 2: Flexbox Centering -->
+                    <div class="snippet-card" data-lang="css" data-animation="fade-slide-up" data-delay="0.1s">
+                        <div class="snippet-header">
+                            <h3 class="snippet-title">Flexbox Centering</h3>
+                            <div class="snippet-meta">
+                                <!-- <i class="fab fa-css3-alt snippet-language-icon icon-css" title="CSS"></i> -->
+                                <i class="fab fa-css3-alt   icon-css" title="CSS3"></i>
+
+                                <span class="snippet-tags">Layout</span>
+                            </div>
+                        </div>
+                        <div class="snippet-output">
+                            <p>Centering an item horizontally and vertically:</p>
+                            <div class="snippet-preview-flex-container">
+                                <div class="snippet-preview-flex-item">Centered Item</div>
+                            </div>
+                        </div>
+                        <div class="snippet-controls">
+                            <button class="macos-button snippet-toggle-code"><i class="fas fa-code"></i> Show Code</button>
+                            <button class="macos-button snippet-toggle-details"><i class="fas fa-info-circle"></i> Details</button>
+                        </div>
+                        <div class="snippet-code-wrapper">
+                            <button class="snippet-copy-code" aria-label="Copy Code"><i class="fas fa-copy"></i> Copy</button>
+                            <textarea class="copy-textarea" aria-hidden="true">.flex-container { display: flex; justify-content: center; align-items: center; min-height: 100px; background-color: rgba(var(--border-color), 0.3); border-radius: 5px; } .flex-item { padding: 15px; background-color: var(--secondary-color); color: white; border-radius: 5px; }</textarea>
+                            <pre><code class="language-css">.flex-container { display: flex; justify-content: center; align-items: center; /* ... */ }
+.flex-item { padding: 15px; background-color: var(--secondary-color); /* ... */ }</code></pre>
+                        </div>
+                        <div class="snippet-details-wrapper">
+                            <p>Fundamental Flexbox centering technique using `justify-content` and `align-items`.</p>
+                        </div>
+                    </div>
+                    <!-- Snippet Card 3: Simple Fetch API -->
+                    <div class="snippet-card" data-lang="js" data-animation="fade-slide-up" data-delay="0.2s">
+                        <div class="snippet-header">
+                            <h3 class="snippet-title">Basic Fetch API (GET)</h3>
+                            <div class="snippet-meta">
+                                <!-- <i class="fab fa-js-square snippet-language-icon icon-js" title="JavaScript"></i> -->
+                                <i class="fab fa-js-square icon-js " title="JavaScript"></i>
+                                <span class="snippet-tags">API</span>
+                            </div>
+                        </div>
+                        <div class="snippet-output">
+                            <p>Example fetching data from JSONPlaceholder:</p>
+                            <button class="btn btn-secondary btn-sm snippet-preview-button" id="fetchDataBtn"><i class="fas fa-sync-alt"></i> Fetch User</button>
+                            <pre id="fetchResultOutput" class="snippet-fetch-output"></pre>
+                        </div>
+                        <div class="snippet-controls">
+                            <button class="macos-button snippet-toggle-code"><i class="fas fa-code"></i> Show Code</button>
+                            <button class="macos-button snippet-toggle-details"><i class="fas fa-info-circle"></i> Details</button>
+                        </div>
+                        <div class="snippet-code-wrapper">
+                            <button class="snippet-copy-code" aria-label="Copy Code"><i class="fas fa-copy"></i> Copy</button>
+                            <textarea class="copy-textarea" aria-hidden="true">async function getUserData(userId = 1) { const apiUrl = `https://jsonplaceholder.typicode.com/users/${userId}`; const outputElement = document.getElementById('fetchResultOutput'); if (!outputElement) return; outputElement.textContent = 'Fetching...'; try { const response = await fetch(apiUrl); if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`); const data = await response.json(); outputElement.textContent = JSON.stringify(data, null, 2); } catch (error) { console.error('Error fetching data:', error); outputElement.textContent = `Error: ${error.message}`; } } document.getElementById('fetchDataBtn')?.addEventListener('click', () => getUserData(Math.floor(Math.random() * 10) + 1));</textarea>
+                            <pre><code class="language-javascript">async function getUserData(userId = 1) { /* ... fetch logic ... */ }
+// Fetch random user 1-10 on button click
+document.getElementById('fetchDataBtn')?.addEventListener('click', /* ... */);</code></pre>
+                        </div>
+                        <div class="snippet-details-wrapper">
+                            <p>Uses `fetch` with `async/await` for cleaner async requests. Includes error handling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- ===== END: Snippets Section ===== -->
+
+        <!-- ===== START: TESTIMONIALS SECTION ===== -->
+        <section id="testimonials" class="testimonials section">
+            <div class="container">
+                <h2 class="section-title" data-animation="fade-in">Client Reviews</h2>
+                 <p class="section-intro" data-animation="fade-in" data-delay="0.1s">Hear what clients are saying about my work.</p>
+                <div class="testimonial-grid">
+                 
+                    <!-- Testimonial Card 1 -->
+                    <article class="testimonial-card" data-animation="fade-slide-up" data-delay="0s" data-rating="5">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">"Working with Shoaib was a fantastic experience. They delivered exactly what we needed, on time and with exceptional quality. Highly recommended!"</p>
+                        <div class="star-rating"><!-- Stars added if need here by JS --></div>
+                        <div class="user-info">
+                          
+                            <img src="client 1.jpg" alt="Client 1 - Alice Johnson" class="user-avatar"> 
+                            <div>
+                                <h4 class="user-name">Alice Johnson</h4>
+                                <span class="user-title">CEO, Tech Startup</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Testimonial Card 2 -->
+                    <article class="testimonial-card" data-animation="fade-slide-up" data-delay="0.1s" data-rating="4.5">
+                         <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">"Professional, creative, and very responsive. The final product exceeded our expectations. The attention to detail was impressive."</p>
+                        <div class="star-rating"><!-- Stars added if need here by JS --></div>
+                        <div class="user-info">
+                             
+                             <img src="client 2.jpg" alt="Client 2 - Bob Williams" class="user-avatar">
+                            <div>
+                                <h4 class="user-name">Bob Williams</h4>
+                                <span class="user-title">Marketing Director, Agency</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Testimonial Card 3 -->
+                     <article class="testimonial-card" data-animation="fade-slide-up" data-delay="0.2s" data-rating="5">
+                         <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">"Incredible design sense and technical skill. Made the whole process smooth and enjoyable. We couldn't be happier with the result!"</p>
+                        <div class="star-rating"><!-- Stars added if need here by JS --></div>
+                        <div class="user-info">
+                            
+                            <img src="client 3.jpg" alt="Client 3 - Charlie Brown" class="user-avatar"> 
+                            <div>
+                                <h4 class="user-name">Charlie Brown</h4>
+                                <span class="user-title">Founder, Creative Studio</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Add more testimonial cards if neede -->
+                </div>
+            </div>
+        </section>
+        <!-- ===== END: TESTIMONIALS SECTION ===== -->
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container contact-layout-grid">
+                <!-- Contact Info / Socials -->
+                <div class="contact-info-area" data-animation="slide-in-left">
+                    <h2 class="section-subtitle">Let's Connect</h2>
+                    <p class="contact-intro-text">
+                        I'm available for freelance projects & collaborations. Have a question or want to discuss an idea? Feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                         <!--   Email  -->
+                        <a href="mailto:shoaib.dev@gmail.com" class="contact-detail-link"><i class="fas fa-envelope icon-gradient"></i> shoaib.dev@gmail.com</a>
+                         <!-- Location -->
+                         <p class="contact-location"><i class="fas fa-map-marker-alt icon-gradient"></i> Based in [Pakistan]</p>
+                    </div>
+                     <h3 class="socials-heading">Find me on:</h3>
+                     <div class="contact-socials">
+                         <!-- Social Links & Tooltips  -->
+                         <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon-link linkedin" data-tooltip="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                         <a href="https://github.com/yourusername" target="_blank" class="social-icon-link github" data-tooltip="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                         <a href="https://twitter.com/yourusername" target="_blank" class="social-icon-link twitter" data-tooltip="Twitter / X" aria-label="Twitter/X"><i class="fab fa-twitter"></i></a>
+                         <a href="#" target="_blank" class="social-icon-link dribbble" data-tooltip="Dribbble" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                         <a href="#" target="_blank" class="social-icon-link codepen" data-tooltip="CodePen" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
+                     </div>
+                </div>
+                <!-- Contact Form -->
+                <form id="contact-form-main" class="contact-form-area" data-animation="slide-in-right" novalidate>
+                    <div class="form-field">
+                        <input type="text" id="contactName" name="name" required placeholder=" ">
+                        <label for="contactName">Your Name</label>
+                        <span class="input-focus-border"></span>
+                    </div>
+                    <div class="form-field">
+                        <input type="email" id="contactEmail" name="email" required placeholder=" ">
+                        <label for="contactEmail">Your Email</label>
+                        <span class="input-focus-border"></span>
+                    </div>
+                    <div class="form-field">
+                        <textarea id="contactMessage" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="contactMessage">Your Message</label>
+                        <span class="input-focus-border"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-glow submit-btn-contact">
+                        <span class="btn-text">Send Message</span>
+                        <span class="spinner"></span>
+                    </button>
+                    <div id="contact-form-status" class="form-status-display"></div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-socials">
+                 <!-- Footer Social Links  -->
+                 <a href="https://linkedin.com/in/yourprofile" target="_blank" class="footer-social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                 <a href="https://github.com/yourusername" target="_blank" class="footer-social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                 <a href="https://twitter.com/yourusername" target="_blank" class="footer-social-icon" aria-label="Twitter/X"><i class="fab fa-twitter"></i></a>
+            </div>
+           
+            <p class="footer-copyright">© <span id="footer-year"></span> Shoaib. All Rights Reserved.</p>
+            <!-- <p class="footer-credits">Designed & Built with <i class="fas fa-heart icon-heart"></i> & Lots of <i class="fas fa-mug-hot"></i></p> -->
+        </div>
+    </footer>
+
+    <!-- Scroll Top & WhatsApp Buttons -->
+    <button class="scroll-to-top-btn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+    <!-- === CONFIG: WhatsApp Number (Include country code, no + or spaces) === -->
+    <a href="https://wa.me/+923285914901" class="whatsapp-sticky-button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- Core JS -->
+    <script src="script.js"></script>
+    <!-- Optional Syntax Highlighting -->
+    <!-- <script src="path/to/prism.js"></script> -->
+    <!-- If using Prism.js, ensure the theme CSS is also linked in <head> -->
+</body>
+</html>
